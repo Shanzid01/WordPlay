@@ -1,0 +1,256 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: IEcBpIVjPAPUz8lPlqvH3H6hVR4=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: T6IMNh9KBWi58Ew6qlUOkIIjDkQ=
+
+Name: res/drawable-hdpi/gm_un_gobtn_click.xml
+SHA1-Digest: NTHl7LNwtB5qm6UmZWjFf2bk4P0=
+
+Name: res/drawable-hdpi/backspace_bt.png
+SHA1-Digest: 9wliB/zeLJe9HDWqZ5fzXCVRO4w=
+
+Name: res/drawable-hdpi/timer_icn.png
+SHA1-Digest: MZofYm/2cbhE8Zq8noBHGjb5eRM=
+
+Name: res/drawable-hdpi/puzzle_unmil.gif
+SHA1-Digest: CkTUkd1wFamuWXsKyiyaV2rqwIw=
+
+Name: res/drawable-hdpi/gm_un.gif
+SHA1-Digest: yvK/bPSCknnI+egVNruJ7SJyjFE=
+
+Name: res/drawable-hdpi/scrm_action_go.png
+SHA1-Digest: AxZyjJigdTeH+yAR0ZnFLjxuODM=
+
+Name: res/drawable-hdpi/game_spl_main_btn_exit.xml
+SHA1-Digest: 9AHBDuIGzcPRiQuVHNcMJIu9qyc=
+
+Name: assets/game_easy.dis
+SHA1-Digest: gITCZrEX/+MpmGlNk/T8n9YgIAA=
+
+Name: assets/gm_wrd.dis
+SHA1-Digest: seXQAgqX3VDiCG2vIxxm0y/h75s=
+
+Name: res/drawable-hdpi/button_bg_clicked.xml
+SHA1-Digest: vhy1zVprc2rA+tbPavP5bdGzXj0=
+
+Name: res/drawable-hdpi/game_spl_go_click.xml
+SHA1-Digest: BxF+hd5QYqTLKNq6SF+ZGAzdefU=
+
+Name: res/drawable-hdpi/game_spl_spk_head.xml
+SHA1-Digest: 2iQo91+CkMKKYnwzgcNMqiegMEs=
+
+Name: res/drawable-hdpi/game_un_btnbg.xml
+SHA1-Digest: 72bg+x7jAohXItaXo0mySR3jvIY=
+
+Name: res/menu/scramble.xml
+SHA1-Digest: Y5jfLNPV/z33uZ4AG8TfSoWrQEc=
+
+Name: res/drawable-hdpi/bee.gif
+SHA1-Digest: auHPYfWXlz4Q8u6UlLnYp/mbklg=
+
+Name: res/drawable-hdpi/gm_un_gobtn.xml
+SHA1-Digest: XvZzVlnXCfOzIRsh7RgHdZs1N5k=
+
+Name: res/drawable-hdpi/game_spl_skp_disabled.xml
+SHA1-Digest: Qy2bzOzHEmmf90fQA+gb2llnnS0=
+
+Name: res/drawable-hdpi/freelifefeltwhite.jpg
+SHA1-Digest: rIB/COcADMQuxYkmaybsRu+e8/M=
+
+Name: res/drawable-hdpi/game_un_head.xml
+SHA1-Digest: H3wEqbEdLXdpB3ZgHgtVy6jRQuE=
+
+Name: res/drawable-hdpi/game_spl_btn_head.xml
+SHA1-Digest: B5qvyuhhY4ulI8oGC63PlEe3IcU=
+
+Name: res/layout/begin_app.xml
+SHA1-Digest: oFY2EJxVF6XgsRZwfN8ZMiNB6fM=
+
+Name: res/drawable-hdpi/game_spl_spk_click.xml
+SHA1-Digest: OlFHR/q6KIamH378dYEABG9pGMg=
+
+Name: res/drawable-hdpi/puzzle_mil.gif
+SHA1-Digest: F95KXJupr6YumEvkARLK+J2tONU=
+
+Name: res/drawable-hdpi/bg_l.gif
+SHA1-Digest: dg7dt+UjkiiSBuIleR+RfnAmjmM=
+
+Name: res/drawable-xxhdpi/ic_launcher.png
+SHA1-Digest: wuvyO9VxGPyH9gSwYxc9wATlybU=
+
+Name: res/drawable-hdpi/game_spl_skp_head.xml
+SHA1-Digest: 7l/kmmv74RbxU0q540oq1E/qqmg=
+
+Name: res/drawable-hdpi/game_spl_scorebg.xml
+SHA1-Digest: a6vJfOrY9CUkCf52zYcdMA1jCqY=
+
+Name: res/anim/left_in.xml
+SHA1-Digest: uAfpCUVpoRQByOXN/yGYJsNSPqY=
+
+Name: res/anim/left_out.xml
+SHA1-Digest: yNSmwGmn2xv5FinVOQaWaC6/rHY=
+
+Name: res/layout/activity_scramble.xml
+SHA1-Digest: lUk7Z+CcBa8+bquYZYCilp3Azh4=
+
+Name: res/anim/right_in.xml
+SHA1-Digest: BuS6k4MiqoHuHc2fxftT4Vnaw+s=
+
+Name: res/drawable-hdpi/tick.gif
+SHA1-Digest: kGbKkxMOalgTQJmB0kU14Vmntxg=
+
+Name: res/drawable-hdpi/scrm_control.xml
+SHA1-Digest: rR/8ERwtQiX5N3fcRNVvov+VTts=
+
+Name: res/drawable-hdpi/action_search.png
+SHA1-Digest: NPel/XrWRy3e5iW11oOHhl0VjGk=
+
+Name: res/drawable-hdpi/button_bg.xml
+SHA1-Digest: X9Wye6gU7VYY0x0DanuWrmEUTGg=
+
+Name: res/drawable-hdpi/game_un_scorebg.xml
+SHA1-Digest: CYQwqRDfIy8OdFZX7g5jwIkrD/g=
+
+Name: res/drawable-hdpi/button_bg2.xml
+SHA1-Digest: RRaXi5hCH18o/6QZDQUmQkpmNew=
+
+Name: res/layout/activity_unscramble.xml
+SHA1-Digest: kUkevwFcjcIlIXh10saQQSlWrsk=
+
+Name: res/drawable-hdpi/game_un_sumbitbg.xml
+SHA1-Digest: QnyS/ZA8IghAcISIMMuSVcGTifQ=
+
+Name: res/anim/top_in.xml
+SHA1-Digest: jY9/UB0LO/XvI9AAPm/9cC4HzRw=
+
+Name: res/anim/top_out.xml
+SHA1-Digest: mgBk4K2GPaXEOLBPkf+Uh5VXLFE=
+
+Name: res/drawable-hdpi/game_spl_skp_click.xml
+SHA1-Digest: BhzSaYltPzBuoSn6tSMXVq1e3/k=
+
+Name: res/drawable-hdpi/ring.xml
+SHA1-Digest: immMh/8e/rUsLyH3Tl0f/LnqD9g=
+
+Name: res/menu/game__spelling.xml
+SHA1-Digest: DyeNcThoyJWCdTv+wvCRKcPvvGw=
+
+Name: assets/master.dis
+SHA1-Digest: ktHwPQbm2iXoZmJkppTMNvLscME=
+
+Name: res/layout/activity_game_spelling.xml
+SHA1-Digest: ffykTjiFb6LW2eS6HIs4a9ttU+k=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: eD7QPgS7XyP+j0xoE4tgSuGX4DE=
+
+Name: res/drawable-hdpi/game_spl_usrtxtbg.xml
+SHA1-Digest: 7Xs+QpuDE5zyJeukpND2PIuXNck=
+
+Name: res/drawable-hdpi/action_stop.png
+SHA1-Digest: 9Wbfkd04NqfB303h5zL40wNb2EI=
+
+Name: assets/game_med.dis
+SHA1-Digest: /JutOGz1CXtGkH9mwquOLivmqmY=
+
+Name: resources.arsc
+SHA1-Digest: slcZH/Kk8BHJJDFmHbztCHFKNrg=
+
+Name: res/anim/bottom_out.xml
+SHA1-Digest: hJJeQsWqKE9IiHatqYUfXbOfj9k=
+
+Name: res/anim/bottom_in.xml
+SHA1-Digest: 5n0S3dNnLl7mJeG4AtxNbrExbMM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: abIfa99LzrsnI4m4Ebk8Fyx64bw=
+
+Name: res/layout/activity_game_unsramble.xml
+SHA1-Digest: ZlyA5gOfBYkrDsXY9FBKlbye9wM=
+
+Name: res/drawable-hdpi/game_spl_speakerplay.png
+SHA1-Digest: 5239XW+pSuzblQenwfTVxwiC3JU=
+
+Name: res/drawable-hdpi/game_spl_go.xml
+SHA1-Digest: S94Hbd1jF+6RZ1/bS50I6J1qjkw=
+
+Name: res/drawable-hdpi/game_spl_btn_clicked.xml
+SHA1-Digest: wEbTJMB6nuN/UUSSFt/7vV2C/CM=
+
+Name: res/drawable-hdpi/cross.gif
+SHA1-Digest: gLNqEhahPWmigreOhrplDi6L+zk=
+
+Name: assets/quick.dis
+SHA1-Digest: HNiEiUDcQXIzHBqiSdQ0Dns4Cro=
+
+Name: assets/font.ttf
+SHA1-Digest: blFx0kX2KUr7BKBkpkiebYuctkY=
+
+Name: res/menu/game_unsramble.xml
+SHA1-Digest: 0dYL2r8t4qubZSDpm4pwz7WEJ3E=
+
+Name: res/drawable-hdpi/wrdinf_back.xml
+SHA1-Digest: C65T40wWY3/JY1ih5wfh1kTOgZ8=
+
+Name: res/drawable-hdpi/game_un_text_back.xml
+SHA1-Digest: dlfyXGw+O3QIt2oNkYumxYqAOaI=
+
+Name: res/drawable-hdpi/play.png
+SHA1-Digest: dGxLNsi2F4Oog3LXTrtIkj9F8P8=
+
+Name: res/drawable-hdpi/unscrm_control.xml
+SHA1-Digest: kdcG3ljA0lNlpJMgY/2CJ1DzF3Y=
+
+Name: res/menu/unscramble.xml
+SHA1-Digest: uPGA1b0ToWsCR1GAkY6CRsbVFFE=
+
+Name: assets/game_hard.dis
+SHA1-Digest: AkUpEV5yCOx5izdOSrI4VesJkfc=
+
+Name: res/drawable-hdpi/button_bg2_clicked.xml
+SHA1-Digest: iAjKkNzZeCuE1SZTs6+F5TvnSzE=
+
+Name: res/drawable-hdpi/game_spl_go_head.xml
+SHA1-Digest: BJ2qGs9WCdSSf2D6U6b4NVw4/fs=
+
+Name: res/drawable-hdpi/game_spl_speakbg.xml
+SHA1-Digest: GP+c2k3VUdm7ZAyrsZmRBqGTQb4=
+
+Name: res/drawable-hdpi/game_spl_btnbg.xml
+SHA1-Digest: NLpe0WCzSuVCjJxMz+aEKjeeRGA=
+
+Name: classes.dex
+SHA1-Digest: NO/UTwTwqUZnnJdde1k4EyqihH0=
+
+Name: res/layout/game_spl_main.xml
+SHA1-Digest: /C2hDZQujW+c6RF7LMUpBmiqrCs=
+
+Name: res/drawable-hdpi/logo_begin.png
+SHA1-Digest: SY7grOYNiXkdVtRjcX6HL+EM0Hs=
+
+Name: res/menu/main.xml
+SHA1-Digest: cnopc58xOLjCTxyxfYe5Ykq5/b0=
+
+Name: res/anim/right_out.xml
+SHA1-Digest: sYP9CyM+eQizUsudFhipJXJgFsw=
+
+Name: res/drawable-hdpi/lego.gif
+SHA1-Digest: 5A/J/W1xllQvsIK2b21SQnIcspA=
+
+Name: res/drawable-hdpi/game_un_skpbg.xml
+SHA1-Digest: Z88Ha8YKmipPJZpdnSfW0TDO178=
+
+Name: res/drawable-mdpi/ic_launcher.png
+SHA1-Digest: IwFyTx79I9pBlJ15AUOEmWTVAE4=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: kLCI6ZeqsWA72g+1NPmFvWwSIHE=
+
+Name: res/drawable-hdpi/bg.gif
+SHA1-Digest: QUCm8aKsicP5REpspG2wT88u66k=
+
+Name: res/drawable-hdpi/game_spl_submitbtn.xml
+SHA1-Digest: KmdYJwBF7Lp6tHnP3pOvOMOkIzQ=
+

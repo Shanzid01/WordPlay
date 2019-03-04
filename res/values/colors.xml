@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_scrm_shadw_clr">#ffff6600</color>
+    <color name="btn_unscrm_shadw_clr">#ff9900ff</color>
+    <color name="black">#ff666666</color>
+    <color name="white">#ffffffff</color>
+</resources>

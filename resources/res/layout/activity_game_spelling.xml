@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/freelifefeltwhite" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="match_parent" android:layout_height="5dp"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_weight="10">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="18sp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@+id/spl_score" android:background="@drawable/game_spl_scorebg" android:layout_width="50dp" android:layout_height="50dp" android:text="0" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/spl_skp_btn" android:background="@drawable/game_spl_skp_head" android:layout_width="70dp" android:layout_height="40dp" android:layout_marginRight="12dp" android:text="Skip (3)" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="skip"/>
+            <ImageView android:id="@+id/speak_btn" android:background="@drawable/game_spl_spk_head" android:paddingLeft="12dp" android:paddingTop="7dp" android:paddingRight="7dp" android:paddingBottom="7dp" android:clickable="true" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="12dp" android:src="@drawable/play" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="speakUsr"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:weightSum="10" android:layout_weight="4">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+                <LinearLayout android:gravity="center" android:id="@+id/game_spl_correct_lay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="17sp" android:textStyle="bold" android:textColor="#00adef" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Correct"/>
+                    <ImageView android:id="@+id/imageView2" android:layout_width="20dp" android:layout_height="15dp" android:layout_marginLeft="3dp" android:src="@drawable/tick" android:scaleType="centerInside"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/game_spl_wong_lay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="17sp" android:textStyle="bold" android:textColor="#ed1c24" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wrong"/>
+                    <ImageView android:id="@+id/imageView3" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="3dp" android:src="@drawable/cross"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/game_spl_answer_lay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="17sp" android:id="@+id/spl_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" android:layout_weight="10"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textStyle="bold" android:textColor="#ffff" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/spl_submit" android:background="@drawable/game_spl_submitbtn" android:paddingTop="13dp" android:layout_width="100dp" android:layout_height="90dp" android:layout_marginBottom="-55dp" android:text="Submit" android:layout_weight="10" android:onClick="submit"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_weight="10">
+                <TextView android:textSize="21sp" android:gravity="center" android:id="@+id/spl_usr_txt" android:background="@drawable/game_spl_usrtxtbg" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="5dp" android:maxWidth="500dp" android:hint="Your Guess..." android:ems="10" android:layout_weight="10" android:inputType="textPersonName"/>
+                <ImageView android:id="@+id/imageView1" android:background="#00ccbb" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="5dp" android:src="@drawable/backspace_bt" android:scaleType="centerInside" android:layout_weight="10" android:onClick="backspace"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/view1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.25"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="5" android:layout_weight="5.5">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="1">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="6">
+                    <Button android:id="@+id/game_spl_main_btn" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="N" android:layout_weight="1" android:onClick="kb"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="6" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                    <Button android:id="@+id/button2" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="M" android:layout_weight="1" android:onClick="kb"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/imageView4" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" android:src="@drawable/timer_icn"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="23sp" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="1">
+                <Button android:id="@+id/Button16" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="Q" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button15" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="W" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button24" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="E" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button13" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="R" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button14" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="T" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button17" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="Y" android:layout_weight="1" android:onClick="kb"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="1">
+                <Button android:id="@+id/Button10" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="U" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button09" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="I" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button12" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="O" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button07" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="P" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button08" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="A" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button11" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="S" android:layout_weight="1" android:onClick="kb"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="1">
+                <Button android:id="@+id/Button04" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="D" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button03" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="F" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button06" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="G" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button01" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="H" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button02" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="J" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button05" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="K" android:layout_weight="1" android:onClick="kb"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="6" android:layout_weight="1">
+                <Button android:id="@+id/Button20" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="L" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button21" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="Z" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button19" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="X" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button23" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="C" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button22" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="V" android:layout_weight="1" android:onClick="kb"/>
+                <Button android:id="@+id/Button18" android:background="@drawable/game_spl_btn_head" android:layout_width="0dp" android:layout_height="match_parent" android:text="B" android:layout_weight="1" android:onClick="kb"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

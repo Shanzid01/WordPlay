@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+        <ImageView android:id="@+id/up_dwn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg" android:scaleType="fitCenter"/>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="6.5">
+                <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/game_unscr_intnt" android:background="@drawable/game_un_head" android:padding="13dp" android:layout_width="95dp" android:layout_height="95dp" android:src="@drawable/lego" android:scaleType="centerInside" android:onClick="game_unsc_go"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="18sp" android:textColor="#222222" android:gravity="center" android:layout_gravity="center" android:id="@+id/spl_score" android:clickable="true" android:layout_width="100dp" android:layout_height="wrap_content" android:text="Unscramble Game" android:onClick="game_unsc_go"/>
+                </LinearLayout>
+                <View android:id="@+id/View01" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5"/>
+                <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp">
+                    <ImageView android:id="@+id/spl_skp_btn" android:background="@drawable/game_spl_go_head" android:paddingRight="5dp" android:layout_width="95dp" android:layout_height="95dp" android:src="@drawable/bee" android:scaleType="centerInside" android:onClick="game_spl_go"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="18sp" android:textColor="#222222" android:gravity="center" android:layout_gravity="center" android:id="@+id/time" android:clickable="true" android:layout_width="100dp" android:layout_height="wrap_content" android:text="Spelling Game" android:onClick="game_spl_go"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="3">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:textSize="25sp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@+id/scramble" android:background="@drawable/scrm_control" android:padding="14dp" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/puzzle_unmil" android:scaleType="fitXY" android:minHeight="120dp" android:onClick="scramble_go"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="15sp" android:id="@+id/scrmbl_lbl" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_activity_scramble" android:onClick="scramble_go"/>
+                </LinearLayout>
+                <View android:id="@+id/view1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:textSize="25sp" android:textStyle="bold" android:textColor="#fff" android:gravity="center" android:id="@+id/unscrm" android:background="@drawable/unscrm_control" android:padding="14dp" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/puzzle_mil" android:scaleType="fitXY" android:minHeight="120dp" android:onClick="click"/>
+                    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="15sp" android:id="@+id/unscrm_lbl" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unscram_btn" android:onClick="click"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

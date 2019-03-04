@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Word Play</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="unscram_btn">Unscramble</string>
+    <string name="shanzid_prod">By Shanzid Shaiham</string>
+    <string name="title_activity_unscramble">Unscramble</string>
+    <string name="lbl_wrd">Jumbled Word</string>
+    <string name="go">Go!</string>
+    <string name="word_ttl">Word:</string>
+    <string name="word_possComb_ttl">Combinations:</string>
+    <string name="matches_ttl">Matches</string>
+    <string name="stop">Stop</string>
+    <string name="title_activity_scramble">Scramble</string>
+    <string name="word">Word to scramble</string>
+    <string name="scrambled">Scrambled</string>
+    <string name="quk_src">Quick Search</string>
+    <string name="wrd_inf">Word Info</string>
+    <string name="title_activity_game_unsramble">Game: Unscramble</string>
+    <string name="title_activity_game__spelling">Game: Spelling</string>
+</resources>

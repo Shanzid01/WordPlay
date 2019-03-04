@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <LinearLayout android:gravity="center" android:background="#ff9900" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="55dp" android:weightSum="10" android:minHeight="50dp">
+        <EditText android:id="@+id/scr_wrd_txt" android:background="#fff" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:hint="@string/lbl_wrd" android:ems="10" android:layout_weight="10" android:inputType="textPersonName">
+            <requestFocus/>
+        </EditText>
+        <View android:id="@+id/view1" android:background="#ffbb00" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="5dp"/>
+        <ImageView android:textSize="20sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/scr_btn_go" android:background="#ff9900" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="3dp" android:src="@drawable/action_search" android:minWidth="65dp" android:onClick="start" android:contentDescription="@string/go"/>
+        <ImageView android:textSize="20sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/scr_btn_stop" android:background="#ff9900" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="3dp" android:src="@drawable/action_stop" android:minWidth="65dp" android:onClick="stop" android:contentDescription="@string/stop"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fff" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="10">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="30dp">
+            <View android:id="@+id/View01" android:background="#0099dd" android:layout_width="4dp" android:layout_height="match_parent" android:layout_marginRight="5dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="20sp" android:textStyle="bold" android:id="@+id/wrd_ply_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wrd_inf"/>
+            <LinearLayout android:gravity="center" android:id="@+id/up_dwn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:onClick="up_dnw" android:alpha="0.5">
+                <View android:id="@+id/View04" android:background="@drawable/ring" android:layout_width="7dp" android:layout_height="7dp"/>
+                <View android:id="@+id/View02" android:background="@drawable/ring" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="1dp"/>
+                <View android:id="@+id/View03" android:background="@drawable/ring" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="1dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/info_wrd" android:background="@drawable/wrdinf_back" android:paddingLeft="7dp" android:paddingTop="5dp" android:paddingRight="7dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:animateLayoutChanges="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/word_ply_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/word_ttl"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/scr_word_ttl" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/word_possComb_ttl"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/scr_possComb_ttl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginTop="13dp" android:layout_marginRight="10dp" android:layout_marginBottom="7dp" android:weightSum="10">
+            <View android:id="@+id/view4" android:background="#ff5500" android:layout_width="4dp" android:layout_height="match_parent" android:layout_marginRight="5dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="20sp" android:textStyle="bold" android:id="@+id/scrmbl_lbl" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/matches_ttl" android:layout_weight="10"/>
+            <ProgressBar android:layout_gravity="right" android:id="@+id/scr_prg" android:visibility="gone" android:layout_width="23dp" android:layout_height="23dp"/>
+        </LinearLayout>
+        <View android:id="@+id/view2" android:background="#dddddd" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_weight="10" android:isScrollContainer="false">
+            <LinearLayout android:orientation="vertical" android:id="@+id/scr_results" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </ScrollView>
+    </LinearLayout>
+    <View android:id="@+id/view3" android:background="#33bbff" android:layout_width="wrap_content" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/freelifefeltwhite" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="37dp">
+        <CheckBox android:id="@+id/quk_src" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/quk_src"/>
+        <requestFocus/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="match_parent" android:layout_height="5dp"/>
+</LinearLayout>

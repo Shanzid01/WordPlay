@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    <LinearLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/view1" android:background="@drawable/logo_begin" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="33.0sp" android:textColor="#ff777777" android:id="@id/word_ply_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_weight="4.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:textColor="#ff888888" android:id="@id/by_shn_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shanzid_prod" />
+    </LinearLayout>
+</LinearLayout>

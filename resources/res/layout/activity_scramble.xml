@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="10">
+    <LinearLayout android:gravity="center_vertical" android:background="#33aa00" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="55dp" android:weightSum="10" android:minHeight="50dp">
+        <EditText android:id="@+id/wrd_txt" android:background="#fff" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:hint="@string/word" android:ems="10" android:layout_weight="10" android:inputType="textPersonName"/>
+        <View android:id="@+id/view1" android:background="#33cc00" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="10"/>
+        <ImageView android:textSize="20sp" android:textStyle="bold" android:textColor="#fff" android:id="@+id/scramble_btn_go" android:background="#33aa00" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="3dp" android:src="@drawable/scrm_action_go" android:minWidth="65dp" android:layout_weight="10" android:onClick="scrm_start" android:contentDescription="@string/go"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="10">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="30dp">
+            <View android:id="@+id/view3" android:background="#ff0066" android:layout_width="4dp" android:layout_height="match_parent" android:layout_marginRight="5dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="20sp" android:textStyle="bold" android:id="@+id/wrd_ply_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/word_ttl"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/scramble_word_ttl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="15dp" android:layout_marginBottom="5dp" android:weightSum="10">
+            <View android:id="@+id/View01" android:background="#9900ee" android:layout_width="4dp" android:layout_height="match_parent" android:layout_marginRight="5dp"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="20sp" android:textStyle="bold" android:id="@+id/scrmbl_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scrambled" android:layout_weight="10"/>
+            <ProgressBar android:layout_gravity="right" android:id="@+id/scramble_prg" android:visibility="gone" android:layout_width="23dp" android:layout_height="23dp" android:layout_weight="10"/>
+        </LinearLayout>
+        <View android:id="@+id/view2" android:background="#999" android:layout_width="wrap_content" android:layout_height="1dp"/>
+        <ScrollView android:id="@+id/scrollView1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/scramble_results" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="match_parent" android:layout_height="5dp">
+        <requestFocus/>
+    </LinearLayout>
+</LinearLayout>

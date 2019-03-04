@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:textColor="#ff333333" android:id="@id/game_spl_main_ttl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Medium Text" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/game_spl_main_btn" android:background="@drawable/game_un_skpbg" android:layout_width="100.0dip" android:layout_height="50.0dip" android:text="Start" style="?android:attr/buttonStyleSmall" />
+        <Button android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/game_spl_main_btn_exit" android:background="@drawable/game_spl_main_btn_exit" android:layout_width="100.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:text="Exit" />
+    </LinearLayout>
+</LinearLayout>

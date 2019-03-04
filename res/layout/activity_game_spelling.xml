@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/freelifefeltwhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:layout_weight="10.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/spl_score" android:background="@drawable/game_spl_scorebg" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="0" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/spl_skp_btn" android:background="@drawable/game_spl_skp_head" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="12.0dip" android:text="Skip (3)" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="skip" />
+            <ImageView android:id="@id/speak_btn" android:background="@drawable/game_spl_spk_head" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="7.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/play" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="speakUsr" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:weightSum="10.0" android:layout_weight="4.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+                <LinearLayout android:gravity="center" android:id="@id/game_spl_correct_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ff00adef" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Correct" />
+                    <ImageView android:id="@id/imageView2" android:layout_width="20.0dip" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/tick" android:scaleType="centerInside" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/game_spl_wong_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="17.0sp" android:textStyle="bold" android:textColor="#ffed1c24" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wrong" />
+                    <ImageView android:id="@id/imageView3" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/cross" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/game_spl_answer_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="17.0sp" android:id="@id/spl_answer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" android:layout_weight="10.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center|top" android:id="@id/spl_submit" android:background="@drawable/game_spl_submitbtn" android:paddingTop="13.0dip" android:layout_width="100.0dip" android:layout_height="90.0dip" android:layout_marginBottom="-55.0dip" android:text="Submit" android:layout_weight="10.0" android:onClick="submit" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:layout_weight="10.0">
+                <TextView android:textSize="21.0sp" android:gravity="center" android:id="@id/spl_usr_txt" android:background="@drawable/game_spl_usrtxtbg" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:maxWidth="500.0dip" android:hint="Your Guess..." android:ems="10" android:layout_weight="10.0" android:inputType="textPersonName" />
+                <ImageView android:id="@id/imageView1" android:background="#ff00ccbb" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/backspace_bt" android:scaleType="centerInside" android:layout_weight="10.0" android:onClick="backspace" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/view1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.25" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="5.0" android:layout_weight="5.5">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="6.0">
+                    <Button android:id="@id/game_spl_main_btn" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="N" android:layout_weight="1.0" android:onClick="kb" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="6.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                    <Button android:id="@id/button2" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="M" android:layout_weight="1.0" android:onClick="kb" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/imageView4" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/timer_icn" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="23.0sp" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+                <Button android:id="@id/Button16" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Q" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button15" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="W" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button24" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="E" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button13" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="R" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button14" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="T" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button17" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Y" android:layout_weight="1.0" android:onClick="kb" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+                <Button android:id="@id/Button10" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="U" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button09" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="I" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button12" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="O" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button07" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="P" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button08" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="A" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button11" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="S" android:layout_weight="1.0" android:onClick="kb" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+                <Button android:id="@id/Button04" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="D" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button03" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="F" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button06" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="G" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button01" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="H" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button02" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="J" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button05" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="K" android:layout_weight="1.0" android:onClick="kb" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="6.0" android:layout_weight="1.0">
+                <Button android:id="@id/Button20" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="L" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button21" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Z" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button19" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="X" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button23" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="C" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button22" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="V" android:layout_weight="1.0" android:onClick="kb" />
+                <Button android:id="@id/Button18" android:background="@drawable/game_spl_btn_head" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="B" android:layout_weight="1.0" android:onClick="kb" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
